@@ -71,6 +71,7 @@ console.log(bool2); //one is a string and the other is a number, so bool2 is fal
 // -- Conditionals -- //
 /** the order of the if statements is important
  * because ONLY the first one that is true will be executed */
+//for an if statement to run, it has to be true
 
 //checks if the user is subscribed and logged in
 let subscribed = false;
@@ -82,7 +83,6 @@ if (subscribed === true) {
 } else {
   console.log("Login to subscribe");
 }
-// -- Conditionals end -- //
 
 // -- Comparison Operators -- //
 /** 
@@ -96,6 +96,21 @@ if (subscribed === true) {
 <=  |check if the first variable is less than or equal to the second
 &&  |check if both variables are true
 ||  |check if either variable is true  
+!!  |check if the variable is true
  */
 
+// -- Comparison Operators end -- //
+
+// -- Ternary Operator -- //
+/** the ternary operator is a shortcut for an if statement */
+let hotOutside = true;
+// if hotOutside is true, it runs the first statement, otherwise the second statement
+hotOutside
+  ? console.log("It's hot outside")
+  : console.log("It's not hot outside");
+
+// -- Ternary Operator end -- //
+// -- Conditionals end -- //
+
 console.log("This is the end of CheatSheet.js");
+console.log("");

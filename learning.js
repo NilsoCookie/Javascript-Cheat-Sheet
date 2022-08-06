@@ -19,3 +19,13 @@ if (cash > price) {
     `You don't have enough money - you need ${difference * -1} more dollars`
   );
 }
+
+// Check if you have enough money and if the store is open - ternary operator
+cash = 45; // just reuses the variables from the previous example
+price = 40;
+let isStoreOpen = false;
+let giveReceipt =
+  isStoreOpen && cash >= price
+    ? "Checkout complete"
+    : "The store is either closed or you don't have enough money";
+console.log(giveReceipt);
